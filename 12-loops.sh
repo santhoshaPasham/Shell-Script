@@ -21,13 +21,14 @@ then
 else 
     echo -e "$2 is $G success $N"
 fi
+}
 
 
 for i in $@
 do 
     echo "Installing the package $i"
     dnf list installed $i
-    if [$? -eq 0]
+    if [ $? -eq 0 ]
     then
         echo -e "installation ..$G Success $N"
     else 
