@@ -30,10 +30,9 @@ do
     dnf list installed $i
     if [ $? -eq 0 ]
     then
-        echo -e "installation ..$G Success $N"
+        echo -e "installation ..done"
     else 
-        echo -e "Installation.. $R Failure $N"
-
-    dnf install $i -y 
-    VALIDATE $i "Installing $i"
+        dnf install $i -y 
+        VALIDATE $i "Installing $i"
+    fi
 done
