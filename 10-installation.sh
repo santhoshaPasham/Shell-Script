@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
     echo "Please run this command with rot access"
     exit 1
@@ -12,7 +12,7 @@ fi
 
 dnf install mysql -y 
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Mysql installation is failure"
     exit 1
@@ -22,7 +22,7 @@ fi
 
 dnf install git -y 
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Git installation is failure"
     exit 1
