@@ -30,9 +30,9 @@ do
     dnf list installed $i
     if [ $? -eq 0 ]
     then
-        echo -e "installation ..done"
+        echo -e "Already installation ..done"
     else 
         dnf install $i -y 
-        VALIDATE $i "Installing $i"
+        VALIDATE $? "Installing $i"
     fi
 done
