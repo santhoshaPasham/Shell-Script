@@ -34,7 +34,7 @@ do
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ]
     then
-        echo -e "Already installation ..$G done $i"
+        echo -e "Already installation ..$G done $i $N"
     else 
         dnf install $i -y 
         VALIDATE $? "Installing $i"
