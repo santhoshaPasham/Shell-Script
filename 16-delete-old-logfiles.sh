@@ -3,7 +3,7 @@
 SOURCE_DIRECTORY=/tmp/app-logs
 
 
-if [ -d $SOURCE_DIRECTORY]
+if [ -d $SOURCE_DIRECTORY ]
 then 
     echo -e "$G Folder exists $N"
 else
