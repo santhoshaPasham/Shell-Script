@@ -2,6 +2,6 @@
 
 Course="Devops from other script"
 
-echo "$Couse"
+echo "$Course"
 echo " process id of other script $$"
 
